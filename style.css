@@ -1,0 +1,422 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Micro Clearfix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+ 
+
+/* Konten */
+
+body{
+    font-size: 16px/28px;
+    font-family: verdana, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.container{
+    padding: 0%;
+    margin: auto;
+    background-color: white;
+}
+
+
+.firstimage{
+    background-image: url(chicago.jpg);
+    height: 650px;
+    background-size: cover;
+}
+
+.overlay{
+    color: white;
+    position: absolute;
+    top:  90%;
+    left: 46%;
+    text-align: center;
+    font-size: 22px;
+    font-family: helvetica, sans-serif;
+}
+
+.overlayy{
+    color: white;
+    position: absolute;
+    top:  94%;
+    left: 38%;
+    text-align: center;
+    font-size: 18x;
+    font-family: helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.sec{
+    background-color: white;
+    height: 430px;
+    padding: 80px 300px 80px 300px;
+}
+
+.sec h1{
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.sec h3{
+    text-align: center;
+    font-style: italic;
+    color: #333;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.sec p{
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+}
+
+.hero{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero p{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.third{
+    background-color: black;
+    padding: 60px 250px 60px 250px;
+}
+
+.third h2{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.third p{
+    text-align: center;
+    color: #eaeaea;
+    margin-top: 22px;
+    opacity: 0.5;
+}
+
+.box{
+    background-color: white;
+    margin-top: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.box li{
+    margin-left: 16px;
+}
+
+.box .sold{
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin-left: 16px;
+    color: #fff;
+    background-color: #f44336;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.box .three{
+    float: right;
+    display: inline-block;
+    margin-right: 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px ;
+}
+
+
+/* Dont Touch */
+
+.boximg{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.boximg .imo{
+    background-color: black;
+    border-right: 19px solid black;
+    padding-left: 10px;
+}
+
+.boximg .imt{
+    background-color: black;
+    border-right: 19px solid black;
+}
+
+.boximg .imtr{
+    background-color: black;
+    border-right: 19px solid black;
+    padding-left: 9px;
+}
+
+.boximg .city{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.boximg .city h3{
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.boximg .city h4{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.boximg .city h5{
+    font-size: 14px;
+}
+
+.buy{
+    text-align: center;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin-top: 18px;
+}
+
+.buy:hover{
+    background-color: #eaeaea;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Dont Touch */
+
+.empat{
+    background-color: white;
+    max-width: 800px;
+    padding-top: 82px;
+    padding-bottom: 164px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empat .atash h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin-top: px;
+    font-weight: 400;
+}
+
+.empat .atash p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 18px;
+}
+
+.contact{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact .cont{
+    float: left;
+    font-size: 18px;
+}
+
+.contact .cont p{
+    margin-top: 8px;
+}
+
+.contact .form{
+    float: right;
+}
+
+.contact .form #msg{
+    margin-top: 6px;
+    padding-right: 2px;
+    height: 30px;
+    width: 334px;
+}
+
+.contact .form .formm #name{
+    height: 30px;
+    width: 160px;
+    padding: 2px;
+}
+
+.contact .form .formm #email{
+    height: 30px;
+    width: 160px;
+    padding: 2px;
+}
+
+::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.form .subm{
+    float: right;
+    margin-top: 6px;
+}
+
+.form .subm .sub{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.empat .form .sub:hover{
+    background-color: #eaeaea;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.last{
+    padding-top: 84px;
+    padding-bottom: 124px;
+}
+
+.last .icon{
+    font-size: 24px;
+    text-align: center;
+}
+
+.last .icon a:hover{
+    opacity: 0.5;
+}
+
+.last .kopi{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 28px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.last .kopi a{
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.kotak{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.kotak .tombol a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 18px;
+}
+
+.kotak .tombol ul li{
+    padding: 16px;
+    font-size: 15px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.kotak .tombol a:hover{
+    background-color: #eaeaea;
+    color: black;
+}
